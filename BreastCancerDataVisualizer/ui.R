@@ -37,16 +37,14 @@ shinyUI(fluidPage(
         # Show a plot of the generated distribution
         mainPanel(
             plotlyOutput(outputId = "plot"),
-          
+            plotOutput("corr", width = "100%", height = "400px"),
+            
             #plotlyOutput("scatter"),
             #plotlyOutput("histogram"),
             #plotlyOutput("bar"),
             #plotlyOutput("lollipop"),
-            plotOutput("corr", width = "100%", height = "400px"),
             #plotlyOutput("boxplot"),
             #textOutput("summary"),
-            
-            width = 10
             
         )
     )
